@@ -33,15 +33,21 @@ for i in range(10):
     case3_total = case3_total + (i + 1)
 print('case3', case3_total)
 
-# case4
+# case4-1
+case4_total = 0
+for i in range(11):
+    case4_total = case4_total + i
+print('case4-1', case4_total)
+
+# case4-2
 case4_total = 0
 for i in range(1, 11):
     case4_total = case4_total + i
-print('case4', case4_total)
+print('case4-2', case4_total)
 
 # case5
 case5_total = 0
-for i in range(11):
+for i in range(1, 11):
     case5_total += i
 print('case5', case5_total)
 
@@ -50,11 +56,11 @@ n = 10
 print('case6', (n*(n+1))//2)
 
 # case7
-a = list(range(11))
+a = list(range(1, 11))
 print('case7', sum(a))
 
 # case8
-print('case8', sum(range(11)))
+print('case8', sum(range(1, 11)))
 
 # case9
 print('case9', 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10)
@@ -67,8 +73,8 @@ print('case10', 55)
 print('case11', reduce(lambda x, y: x + y, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 # case12(reduce, for)
-print('case12', reduce(lambda x, y: x + y, [x for x in range(11)]))
+print('case12', reduce(lambda x, y: x + y, [x for x in range(1, 11)]))
 
 # case13(reduce, list)
-print('case13', reduce(lambda x, y: x + y, range(11)))
+print('case13', reduce(lambda x, y: x + y, range(1, 11)))
 
